@@ -8,6 +8,8 @@ using System.IO;
 
 // Camera Position
 
+// Camera Rotation
+
 // Sun Light Direction
 
 // Sun Light Strength = Color * Intensity
@@ -47,6 +49,8 @@ public class PVGISceneExporter : MonoBehaviour {
 		writer.Write (sceneName + " ");
 
 		writer.Write (camera.transform.position.x + " " + camera.transform.position.y + " " + camera.transform.position.z + " ");
+
+		writer.Write (camera.transform.rotation.x + " " + camera.transform.rotation.y + " " + camera.transform.rotation.z + " " + camera.transform.rotation.w + " ");
 
 		writer.Write (light.transform.forward.x + " " + light.transform.forward.y + " " + light.transform.forward.z + " ");
 
